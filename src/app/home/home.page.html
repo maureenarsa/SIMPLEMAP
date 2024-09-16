@@ -1,0 +1,122 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="text-align: center; font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: bold; color: #2C3E50; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+      Investasi Pertambangan Kabupaten Bangka
+    </ion-title>
+
+    <h5 style="text-align: center; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 400; color: #34495E; margin-top: 5px;">
+      Dinas Pertambangan Kab. Bangka
+    </h5>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" style="background-color: #F0F4F8;">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Maureen Arsa Sanda Cantika</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Map Container -->
+  <div id="container" style="height: 100vh; position: relative;"></div>
+
+  <!-- Legend Section -->
+  <div class="legend-container">
+    <h3>Legenda</h3>
+    <div class="legend-item">
+      <span class="legend-color" style="background-color: rgb(210, 180, 140);"></span>
+      <span class="legend-text">Pasir Kwarsa</span>
+    </div>
+    <div class="legend-item">
+      <span class="legend-color" style="background-color: rgb(0, 255, 0);"></span>
+      <span class="legend-text">Batu Granit</span>
+    </div>
+    <div class="legend-item">
+      <span class="legend-color" style="background-color: rgb(255, 255, 0);"></span>
+      <span class="legend-text">Tanah Uruk</span>
+    </div>
+    <div class="legend-item">
+      <span class="legend-color" style="background-color: rgb(255, 0, 0);"></span>
+      <span class="legend-text">Tanah Merah</span>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Dinas Pertambangan Kabupaten Bangka | All rights reserved</p>
+    <p>Contact: <a href="mailto:info&#64;dinaspertambanganbangka.go.id">info&#64;dinaspertambanganbangka.go.id</a></p>
+  </footer>
+</ion-content>
+
+<!-- Styles for the legend, footer, and overall layout -->
+<style>
+  /* Legend Styles */
+  .legend-container {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    width: 150px;
+    z-index: 999;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+  }
+
+  .legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid #000;
+  }
+
+  .legend-text {
+    font-size: 14px;
+    color: #333;
+  }
+
+  /* Footer Styles */
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+  }
+
+  .footer a {
+    color: #1ABC9C;
+    text-decoration: none;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* Overall Content */
+  ion-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .legend-container {
+      width: 90%;
+      left: 5%;
+      right: auto;
+    }
+  }
+</style>
